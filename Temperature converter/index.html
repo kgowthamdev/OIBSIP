@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="myscript.js"></script>
+    
+    <title>Product Modal</title>
+  </head>
+  <body>
+   
+    
+    <div class="flex items-center 
+    justify-center min-h-screen bg-slate-100">
+    
+      <div
+        class="flex flex-col p-6 m-3 
+        space-y-10 bg-white rounded-2xl 
+        shadow-2xl md:flex-row 
+         md:m-0 md:p-16"
+      >
+          <div class="flex flex-col mb-4
+           space-y-4 text-center md:text-left">
+            <div class="max-w-sm text-2xl text-center font-bold">
+              Temperature Converter
+            </div>
+            <div class="flex flex-col mb-4
+             space-y-3 text-center md:text-left">
+              
+              <p class="text-sm text-center font-light text-gray-400 mb-6">
+                Convert  to any temperature  just by one click
+              </p>
+            </div>
+          
+            <div class="space-y-4">
+            <input
+            type="text" id="temperatureinput"
+            class="w-full p-6 border border-gray-300 
+            rounded-md placeholder:font-sans placeholder:font-light"
+            placeholder="Enter the Temperature"
+          />
+          <div class="flex justify-center items-center ">
+          <div class=" relative min min-w-44 md:w-64">
+            <select id="temperatureType" class="appearance-none
+             w-full bg-white
+             border border-gray-300 hover:border-gray-600 px-4 
+             py-2 pr-8 rounded shadow leading-tight
+              focus:outline-none focus:shadow-outline">
+              <option>Fahrenheit</option>
+              <option>Celsius </option>
+              
+            </select>
+            <div id="convertedTemperature" 
+            class="text-4xl text-center text-black mt-5"></div>
+           
+          </div>
+          
+          </div>
+          
+        </div>
+
+            
+            <div class="group " onclick="convertTemperature()">
+               <button 
+                class="  w-full transition-all duration-150
+                 bg-blue-700 text-white border-b-8 
+                 border-b-blue-700 rounded-lg 
+                 group-hover:border-t-8 group-hover:border-b-0
+                  group-hover:bg-blue-700
+                   group-hover:border-t-blue-700 group-hover:shadow-lg"
+
+              >
+              
+                <div
+                  class="px-8 py-4 duration-150
+                   bg-blue-500 text-bold text-xl rounded-lg group-hover:bg-blue-700"
+                >
+                  Convert
+                </div>
+              </button>
+            </div>
+
+         
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
